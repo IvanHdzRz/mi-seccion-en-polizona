@@ -21,14 +21,14 @@ getData().then(data=>{
         styleActiveLine:true,
        
     });    
-})
+}).catch(e=>alert(e))
 
 
 
 
 
 async function getData (){
-    const req=await fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+    const req=await fetch('http://polizona.com/mercado/22/conexion.php')
     const res=await req.json();
     loading=false;
     return res;
